@@ -1,0 +1,68 @@
+.kdock__possibility {
+    display: flex;
+    flex-direction: row;
+}
+
+.kdock__possibility-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    margin-right: 2rem;
+}
+
+.kdock__possibility-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.kdock__possibility-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.kdock__possibility-content h4 {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    color: var(--color-text);
+}
+
+.kdock__possibility-content h4:last-child {
+    color: var(--color-subtext);
+}
+
+.kdock__possibility-content h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+
+    margin: 1rem 0;
+}
+
+.kdock__possibility-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: var(--font-family);
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 950px) {
+    .kdock__possibility {
+        flex-direction: column;
+    }
+
+    .kdock__possiblity-image {
+        margin: 1rem 0;
+    }
+
+    .kdock__possibility-content {
+        margin-top: 2rem;
+    }
+}
